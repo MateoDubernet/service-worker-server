@@ -12,7 +12,6 @@ import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/service-worker/push-subscription")
-@CrossOrigin("http://127.0.0.1:8080/")
 public class PushSubscriptionController {
 
     private final PushSubscriptionService pushSubscriptionService;

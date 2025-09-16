@@ -12,6 +12,7 @@ import org.jose4j.lang.JoseException;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.List;
 import java.util.Optional;
@@ -50,10 +51,11 @@ public class PushSubscriptionServiceImpl implements PushSubscriptionService {
                     pushSubscription.getEndpoint(),
                     pushSubscription.getP256dhKey(),
                     pushSubscription.getAuthKey(),
-                    payload.getBytes(),
+                    payload.getBytes(StandardCharsets.UTF_8),
                     60
             );
 
+            System.out.println("Send Notif");
             pushService.send(notification);
         }
     }

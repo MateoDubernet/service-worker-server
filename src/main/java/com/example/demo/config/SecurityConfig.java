@@ -13,6 +13,5 @@ public class SecurityConfig {
     @PostConstruct
     public void init() {
         Security.addProvider(new BouncyCastleProvider());
-        log.info("--------------------------------------- Bouncy castle version : {}", Security.getProvider("BC"));
     }
 }

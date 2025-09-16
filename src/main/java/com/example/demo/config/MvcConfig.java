@@ -20,26 +20,12 @@ import java.io.File;
 public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-
-
-
         String currentPath = System.getProperty("user.dir");
-
-
-
         String dataPath = currentPath+ File.separator+"data"+File.separator;
-
-
-
         registry
-
-
-
                 .addResourceHandler("/data/**")
                 .addResourceLocations("file:"+dataPath).setCacheControl(CacheControl.noCache()).setCachePeriod(0);
     }
-
-
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
@@ -48,10 +34,6 @@ public class MvcConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "OPTIONS", "PUT","PATCH")
                 .allowedHeaders("Content-Type", "X-Requested-With", "accept", "Origin", "Access-Control-Request-Method",
                         "Access-Control-Request-Headers","Access-Control-Allow-Origin","Access-Control-Allow-Credentials")
-// .exposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Credentials")
                 .allowCredentials(true).maxAge(3600);
     }
-
-
-
 }
