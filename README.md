@@ -52,13 +52,11 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 ---
 
 ## Fonctionnalités
-**Gestion des abonnements :**\
-L’utilisateur envoie sa Push Subscription (endpoint + clés p256dh et auth)\
-Le serveur stocke cette subscription en base de données PostgreSQL.
+**Gestion des abonnements :**
+- L’utilisateur envoie sa Push Subscription (endpoint + clés p256dh et auth)
+- Le serveur stocke cette subscription en base de données PostgreSQL.
 
-**Envoi de notifications :**\
-Le serveur reçoit une requête pour envoyer une notification.\
-Le payload est converti en JSON et encodé en UTF-8.
-
-La notification est envoyée au navigateur via le service worker et le Push API.
-
+**Envoi de notifications :**
+- Le serveur reçoit une requête pour envoyer une notification.
+- Le payload est converti en JSON et encodé en UTF-8.
+- La notification est envoyée au navigateur via le service worker et le Push API.
