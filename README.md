@@ -3,7 +3,9 @@
 ## Contexte
 
 ### Description
-Ce serveur Spring Boot permet d’envoyer des notifications push aux clients via un service worker. Il gère les abonnements et envoie les payloads JSON encodés en UTF-8 aux navigateurs compatibles.
+Il s'agit d'un projet réaliser durant mon alternance dans le but de me former aux service worker et noyification push.
+
+Ceci est la partie serveur du projet qui utilise le framework Spring et le langage Java, il permet d’envoyer des notifications push aux clients. Il gère les abonnements et envoie les payloads JSON encodés en UTF-8 aux navigateurs compatibles.
 
 ### Projet lié
 Cette application est utilisé conjointement avec le projet client disponible ici :
@@ -15,7 +17,8 @@ https://github.com/MateoDubernet/service-worker-client
 
 - **Java 11** (Amazon Corretto 11 recommandé)
 - **IntelliJ IDEA** (ou tout autre IDE compatible Spring Boot)
-- **PostgreSQL**
+- **PostgreSQL** pour la base de données
+- Navigateurs **Google chrome, Firefox** de préférence pour la compatibilités avec les notifications push
 
 ---
 
@@ -54,13 +57,14 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 
 ## Fonctionnalités
 **Gestion des abonnements :**
-- L’utilisateur envoie sa Push Subscription (endpoint + clés p256dh et auth)
+- L’utilisateur envoie sa Push Subscription (endpoint + clés p256dh et auth) via le client
 - Le serveur stocke cette subscription en base de données PostgreSQL.
 
 **Envoi de notifications :**
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
 
 
 
