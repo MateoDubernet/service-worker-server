@@ -41,7 +41,7 @@ Ouvrir le projet dans IntelliJ
     - Dans **Build & run -> Main class** sélectionner : **com.example.demo.DemoApplication**
 
 
-3. **Configurer la connexion à la base de données**
+3. **Configurer de la base de données**
    - Dans `src/main/resources/application.properties` remplacer les valeurs de connexions par celles adapter
    - Créer la base de données **service_worker** avec postgreSQL et charger le fichier **service_worker.sql**
 
@@ -62,6 +62,7 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
 
 
 
