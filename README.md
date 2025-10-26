@@ -18,8 +18,6 @@ https://github.com/MateoDubernet/service-worker-client
 - **Java 11** (Amazon Corretto 11 recommandé)
 - **IntelliJ IDEA** (ou tout autre IDE compatible Spring Boot)
 - **PostgreSQL** pour la base de données
-- Navigateurs **Google chrome, Firefox** de préférence pour la compatibilités avec les notifications push
-
 ---
 
 ## Installation et lancement
@@ -64,6 +62,7 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
 
 
 
