@@ -15,6 +15,7 @@ https://github.com/MateoDubernet/service-worker-client
 
 - **Java 11** (Amazon Corretto 11 recommandé)
 - **IntelliJ IDEA** (ou tout autre IDE compatible Spring Boot)
+- PostgreSQL
 
 ---
 
@@ -41,7 +42,7 @@ Ouvrir le projet dans IntelliJ
 
 3. **Configurer la connexion à la base de données**
    - Dans `src/main/resources/application.properties` remplacer les valeurs de connexions par celles adapter
-   - Créer la base de données
+   - Créer la base de données postgreSQL et charger le fichier **service_worker.sql**
 
 ### 3. Lancer l’application côté serveur
 Appuyer sur le bouton play de IntellIj
@@ -60,3 +61,4 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
