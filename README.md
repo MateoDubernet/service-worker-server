@@ -41,7 +41,7 @@ Ouvrir le projet dans IntelliJ
     - Dans **Build & run -> Main class** sélectionner : **com.example.demo.DemoApplication**
 
 
-3. **Configurer de la base de données**
+3. **Connexion à la base de données**
    - Dans `src/main/resources/application.properties` remplacer les valeurs de connexions par celles adapter
    - Créer la base de données **service_worker** avec postgreSQL et charger le fichier **service_worker.sql**
 
