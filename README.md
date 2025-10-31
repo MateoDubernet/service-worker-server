@@ -26,9 +26,11 @@ https://github.com/MateoDubernet/service-worker-client
     git clone <url-du-repo>
     cd <nom-du-dossier>
 ```
-Ouvrir le projet dans IntelliJ
 
-### 2. Configuration du projet
+### 2. Aller sur le projet
+- Ouvrir le projet dans IntelliJ
+
+### 3. Configuration du projet
 1. **Configurer Java 11 (Corretto) dans IntelliJ**
     - Aller dans **File → Project Structure → Project**
     - Choisir **Project SDK → Corretto 11**
@@ -45,10 +47,10 @@ Ouvrir le projet dans IntelliJ
    - Dans `src/main/resources/application.properties` remplacer les valeurs de connexions par celles adapter
    - Créer la base de données **service_worker** avec postgreSQL et charger le fichier **service_worker.sql**
 
-### 3. Lancer l’application côté serveur
+### 4. Lancer l’application côté serveur
 Appuyer sur le bouton play de IntellIj
 
-### 4. Lancer l’application côté client
+### 5. Lancer l’application côté client
 Lien client: https://github.com/MateoDubernet/service-worker-client
 
 ---
@@ -62,6 +64,7 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
 
 
 
