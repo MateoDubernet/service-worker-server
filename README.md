@@ -24,7 +24,6 @@ https://github.com/MateoDubernet/service-worker-client
 ### 1. Cloner le projet
 ```bash
     git clone <url-du-repo>
-    cd <nom-du-dossier>
 ```
 
 ### 2. Aller sur le projet
@@ -64,6 +63,7 @@ Lien client: https://github.com/MateoDubernet/service-worker-client
 - Le serveur reçoit une requête pour envoyer une notification.
 - Le payload est converti en JSON et encodé en UTF-8.
 - La notification est envoyée au navigateur via le service worker et le Push API.
+
 
 
 
